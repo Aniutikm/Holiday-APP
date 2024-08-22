@@ -1,0 +1,50 @@
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #3f51b5;
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .full-width {
+    width: 100%;
+  }
+}
+
+.country-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 8px;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #3f51b5;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #1e88e5;
+      }
+    }
+  }
+}
+
+.random-countries-card {
+  margin-top: 20px;
+}

@@ -1,0 +1,12 @@
+<mat-card class="random-countries-card">
+  <h2>Random Countries</h2>
+  <div *ngFor="let country of randomCountries" class="country-item">
+    <mat-card class="country-card">
+      <mat-card-title>{{ country.name }}</mat-card-title>
+      <mat-card-subtitle>
+        {{ country.holidayName }} -
+        {{ country.holidayDate | date: 'longDate' }}
+      </mat-card-subtitle>
+    </mat-card>
+  </div>
+</mat-card>

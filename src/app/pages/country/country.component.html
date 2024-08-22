@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <div class="title-container">
+        <h2>Holiday List</h2>
+      </div>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="year-switcher">
+      <button
+        mat-raised-button
+        color="primary"
+        *ngFor="let year of years"
+        (click)="loadHolidays(year)"
+        [disabled]="year === currentYear"
+      >
+        {{ year }}
+      </button>
+    </div>
+    <div class="holiday-list">
+      <mat-list>
+        <mat-list-item *ngFor="let holiday of holidays">
+          <mat-icon mat-list-icon>event</mat-icon>
+          <div mat-line>
+            <strong>{{ holiday.name }}</strong> - {{ holiday.date }}
+          </div>
+          <div mat-line>Type: {{ holiday.types.join(', ') }}</div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </mat-card-content>
+</mat-card>

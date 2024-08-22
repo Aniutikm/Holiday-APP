@@ -1,0 +1,24 @@
+.random-countries-card {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+    color: #3f51b5;
+  }
+
+  .country-item {
+    margin-bottom: 15px;
+
+    .country-card {
+      padding: 15px;
+      transition: box-shadow 0.3s;
+
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
