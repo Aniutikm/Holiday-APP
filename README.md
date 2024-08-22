@@ -1,27 +1,46 @@
-# HolidayApp
+# Holiday App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+## Overview
 
-## Development server
+The **Holiday App** is a web application designed to display and manage holiday data for various countries. Users can view holidays by year, explore holiday details, and interact with a variety of features such as selecting countries and filtering data. The application uses Angular for the front-end, with styling provided by Angular Material.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **View Holidays:** Display holidays for a selected country and year.
+- **Random Countries Widget:** Get information about holidays for random countries.
+- **Responsive Design:** Optimized for various screen sizes using Angular Material.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Architecture
 
-## Build
+- **Angular:** The core framework for building the front-end application.
+- **Angular Material:** Provides UI components and styling.
+- **TypeScript:** Adds type safety and modern JavaScript features.
+- **ESLint and Prettier:** Ensure code quality and consistency.
+- **Nager.Date API:** Used to fetch holiday data.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+To get started with the Holiday App, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the Repository:**
 
-## Running end-to-end tests
+    ```bash
+    git clone https://github.com/Aniutikm/Holiday-APP.git
+    cd holiday-app
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Install Dependencies:**
 
-## Further help
+    Ensure you have Node.js and npm installed. Then run:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    npm install
+    ```
+
+## Development
+
+To start the development server and run the application locally:
+
+```bash
+npm start
+
